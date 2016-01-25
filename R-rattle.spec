@@ -2,7 +2,7 @@
 %global packrel 1
 %global debug_package %{nil}
 
-Name:             %{packname}
+Name:             R-%{packname}
 Version:          4.0.5
 Release:          1%{?dist}
 Source0:          ftp://cran.r-project.org/pub/R/contrib/main/%{packname}_%{version}.tar.gz
@@ -10,7 +10,7 @@ License:          GPLv2+
 URL:              http://cran.r-project.org/src/contrib
 Group:            Applications/Engineering
 Summary:          Adds foo functionality for R
-BuildRequires:    R-devel, tex(latex)
+BuildRequires:    R-devel, tex(latex), texlive-lastpage, R-stringi,  R-magrittr, R-RGtk2
 BuildRoot:        %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:         R-core
 
